@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Cloister Black";
+    src: url(source/fonts/CloisterBlack.ttf);
+}
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --blue-soft: #346991;
+    --blue-hard: #326891;
+    --grey-soft: #5A5A5A;
+    --grey-hard: #44444b;
+    --red: #D00631;
+    --green: #3F893B;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 68%;
+}
