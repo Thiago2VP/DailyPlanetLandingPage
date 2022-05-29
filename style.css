@@ -264,6 +264,15 @@ html{
     border-color: lightgray;
 }
 
+.grey-line-up{
+    border-top: 0.1rem;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: lightgray;
+}
+
 .double-black-line{
     border-top: 0;
     border-left: 0;
@@ -286,17 +295,22 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 3rem auto auto auto;
     padding: 1rem;
 }
 
-.body-section h1{
-    font-size: 2.8rem;
+.body-section h1, .body-section-column h1{
+    font-size: 3rem;
+    margin: 1rem auto auto auto;
 }
 
 .body-section a, .body-section-column a{
     color: #000000;
     text-decoration: none;
+}
+
+.body-section ul, .body-section-column ul{
+    padding-inline-start: 0;
+    font-size: 1.28rem;
 }
 
 .body-section a:hover, .body-section-column a:hover{
@@ -308,7 +322,7 @@ html{
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    margin: 3rem auto auto auto;
+    margin: auto;
     padding: 1rem;
 }
 
@@ -327,4 +341,86 @@ html{
     border-bottom: 0;
     border-style: solid;
     border-color: lightgray;
+}
+
+.body-section h2, .body-section-column h2{
+    font-size: 1.55rem;
+}
+
+.body-section h3, .body-section-column h3{
+    font-size: 1.35rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--red);
+}
+
+.black-line-up{
+    border-top: 0.1rem;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: black;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+.force-width{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.credit{
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.3rem;
+}
+
+.special-squad{
+    display: block;
+    text-align: center;
+    background-color: #D5CFBB;
+    overflow: hidden;
+    max-height: 11rem;
+}
+
+.special-squad h2:hover{
+    color: #000000;
+}
+
+.body-section table{
+    overflow: auto;
+    color: var(--black-grey);
+}
+.body-section table:hover{
+    color: var(--black-grey);
+}
+
+.body-section thead{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.body-section tbody{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.tittle-paragrap{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.35rem;
+    padding: 1rem;
+}
+
+.button-paragrap{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin: 1rem;
+    color: #3b3b3b;
+    background-color: rgb(240, 239, 239);
 }
