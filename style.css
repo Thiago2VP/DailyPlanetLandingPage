@@ -353,6 +353,13 @@ html{
     color: var(--red);
 }
 
+.body-section h4, .body-section-column h4{
+    font-size: 1.35rem;
+    padding: 0;
+    margin: 0;
+    color: var(--grey-soft);
+}
+
 .black-line-up{
     border-top: 0.1rem;
     border-left: 0;
