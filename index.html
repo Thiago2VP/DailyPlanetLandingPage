@@ -7,9 +7,129 @@
     <title>Daily Planet</title>
     <link rel="shortcut icon" href="source/img/icon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/78153354c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header class="container">
+        <div class="header-section complete">
+            <div class="header-section" style="margin-left: 0;">
+                <aside class="menu">
+                    <input id="menu-button" class="menu-button" type="checkbox" aria-label="Menu Button" role="button">
+                    <label class="menu-button-label" for="menu-button" title="menu-button"></label>
+                    <nav class="menu-content">
+                        <ul onclick="getElementById('menu-button').checked = false;">
+                            <li><a href="#">Home Page</a></li>
+                            <li><a href="#">World</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Politics</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Health</a></li>
+                            <li><a href="#">Opinion</a></li>
+                            <li><a href="#">Tech</a></li>
+                            <li><a href="#">Science</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <aside class="search">
+                    <input id="search-button" class="search-button" type="checkbox" aria-label="Search Button" role="button">
+                    <label class="search-button-label" for="search-button" title="search-button"></label>
+                    <nav class="search-content">
+                        <input type="text" id="search-text" name="search-text" placeholder="SEARCH">
+                        <button type="button">GO</button>
+                    </nav>
+                </aside>
+            </div>
+            <div class="header-section">
+                <ul class="menu-list">
+                    <ui><a href="#" class="bold">U.S.</a></ui>
+                    <ui><a href="#">INTERNATIONAL</a></ui>
+                    <ui><a href="#">CANADA</a></ui>
+                    <ui><a href="#">SPAÑOL</a></ui>
+                    <ui><a href="#">中文</a></ui>
+                </ul>
+            </div>
+            <div class="header-section" style="margin-right: 0;">
+                <button type="button" class="main-button">SUBSCRIBE FOR $0.25/WEEK</button>
+                <button type="button" class="main-button">LOG IN</button>
+            </div>
+        </div>
+        <div class="header-section grey-line-bottom complete">
+            <div class="header-section-column force-margin">
+                <span data-testid="todays-date" class="bold">Saturday, May 28, 2022</span>
+                <a href="#">Today's Paper</a>
+            </div>
+            <div class="header-section-column">
+                <h1>Daily Planet</h1>
+            </div>
+            <div class="header-section-column" style="margin-right: 0;">
+                <div class="header-section" style="max-height: 0.6rem;">
+                    <p class="cloud">🌤</p>
+                    <p class="bold actual-temperature">22°C</p>
+                    <p class="max-temp">28°</p>
+                    <p class="min-temp">17°</p>
+                </div>
+                <div class="header-section">
+                    <p class="basic-a">Nasdaq</p>
+                    <p class="value">+2.76% ￪</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-section complete double-black-line">
+            <ul class="menu-list header-section">
+                <ui><a href="#">World</a></ui>
+                <ui><a href="#">U.S.</a></ui>
+                <ui><a href="#">Politics</a></ui>
+                <ui><a href="#">M.T.</a></ui>
+                <ui><a href="#">Business</a></ui>
+                <ui><a href="#">Opinion</a></ui>
+                <ui><a href="#">Tech</a></ui>
+                <ui><a href="#">Science</a></ui>
+                <ui><a href="#">Health</a></ui>
+                <ui><a href="#">Sports</a></ui>
+                <ui><a href="#">Arts</a></ui>
+                <ui><a href="#">Books</a></ui>
+                <ui><a href="#">Style</a></ui>
+                <ui><a href="#">Food</a></ui>
+                <ui><a href="#">Travel</a></ui>
+                <ui><a href="#">Magazine</a></ui>
+                <ui><a href="#">T Magazine</a></ui>
+                <ui><a href="#">Real Estate</a></ui>
+                <ui><a href="#">Video</a></ui>
+            </ul>
+        </div>
+    </header>
+    <div class="container-row">
+        <div class="body-section-column grey-line-right divide-left">
+            <a href="#" style="text-align: center;"><h1>As Officers Stood Outside, Girl Pleaded: ‘Send the Police’</h1></a>
+            <div class="body-section grey-line-bottom">
+                <div class="body-section-column">
+                    <div class="body-section-column divide-right">
+                        <a href="#">
+                            <h2>Official Says Waiting to Enter Classroom Was ‘Wrong Decision’</h2>
+                            <ul style="color: black;">
+                                <ui>A new timeline from the Texas state police raised questions about whether lives at Robb Elementary School could have been saved with swift action.</ui>
+                                <ui>Officials said 78 minutes elapsed before the police, believing “there were no kids at risk,” confronted the gunman.</ui>
+                            </ul>
+                        </a>
+                        <a href="#">
+                            <h2>At N.R.A. Convention, the Blame Is on ‘Evil,’ Not Guns</h2>
+                            <ul style="color: black;">
+                                <ui>One by one, attendees said they were horrified by the Texas massacre. And one by one, they rejected suggestions of gun control.</ui>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="body-section-column divide-right">
+            <a><h1>As Officers Stood Outside, Girl Pleaded: ‘Send the Police’</h1></a>
+        </div>
+    </div>
 </body>
 </html>
