@@ -140,7 +140,6 @@ html{
     text-align: center;
     padding: 0.8rem;
     cursor: pointer;
-    transform: rotate(15deg);
 }
 
 .search-button:checked~.search-content{
@@ -290,6 +289,14 @@ html{
     flex-direction: row;
 }
 
+.container-column{
+    max-width: 120rem;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .body-section{
     display: flex;
     flex-direction: row;
@@ -310,7 +317,7 @@ html{
 
 .body-section ul, .body-section-column ul{
     padding-inline-start: 0;
-    font-size: 1.28rem;
+    font-size: 1.36rem;
 }
 
 .body-section a:hover, .body-section-column a:hover{
@@ -431,3 +438,52 @@ video{
     color: #3b3b3b;
     background-color: rgb(240, 239, 239);
 }
+
+.btn-left{
+    display: none;
+}
+
+.btn-left-label::after {
+    content: "‹";
+    font-size: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.1rem 0.5rem 0.6rem 0.5rem;
+    border-radius: 90%;
+    background-color: rgb(230, 228, 228);
+    margin: 1rem;
+    position: absolute;
+    top: 15rem;
+}
+
+.btn-left:checked~.carroussel-start{
+    margin-left: -35rem;
+    transition: linear 0.4s all;
+}
+
+.btn-right{
+    display: none;
+}
+
+.btn-right-label::after {
+    content: "›";
+    font-size: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.1rem 0.5rem 0.6rem 0.5rem;
+    border-radius: 90%;
+    background-color: rgb(230, 228, 228);
+    position: absolute;
+    top: 15.8rem;
+    right: 7rem;
+}
+
+.btn-right:checked~.carroussel-start{
+    margin-left: 0rem;
+    transition: linear 0.4s all;
+}
+
