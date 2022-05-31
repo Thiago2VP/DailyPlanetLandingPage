@@ -34,6 +34,7 @@ html{
 .header-section h1{
     font-family: "Cloister Black";
     font-size: 6rem;
+    text-align: center;
 }
 
 .header-section a{
@@ -487,6 +488,11 @@ video{
     transition: linear 0.4s all;
 }
 
+.noticiary-img{
+    width: 19rem;
+    height:16rem;
+}
+
 footer h1{
     font-family: "Cloister Black";
     color: #000000;
@@ -579,4 +585,75 @@ footer h3{
     content: "⛾";
     font-size: 2.5rem;
     padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1110px){
+    .change-scroll{
+        overflow: scroll;
+    }
+    .body-section{
+        overflow-x: scroll;
+    }
+    .body-section-column{
+        overflow-x: scroll;
+    }
+    .change-display{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .full-page-content{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .body-section{
+        overflow: auto;
+    }
+    .body-section-column{
+        overflow: auto;
+    }
+    .body-section{
+        flex-direction: column;
+    }
+    .divide-left{
+        width: 100%;
+    }
+    .divide-right{
+        width: 100%;
+    }
+    .noticiary-img{
+        width: 100%;
+        height: auto;
+    }
+    .grey-line-right{
+        border-color: white;
+    }
+    .grey-line-bottom{
+        border-color: white;
+    }
+    .grey-line-up{
+        border-color: white;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .medium-page-content-1{
+        display: none;
+    }
+    .footer-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-button{
+        background-color: #000000;
+        border-color: #000000;
+    }
+    .main-button:hover{
+        background-color: #000000;
+        border-color: #000000;
+    }
 }
