@@ -23,6 +23,10 @@ html{
     font-size: 62.5%;
 }
 
+body li{
+    list-style-type: none;
+}
+
 .container{
     max-width: 120rem;
     margin: auto;
@@ -54,6 +58,17 @@ html{
     margin: auto;
 }
 
+.header-section.medium-page-content-1{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.medium-page-content-1 a{
+    text-decoration: none;
+    text-align: center;
+}
+
 .menu-button{
     bottom: 0;
     text-align: center;
@@ -64,7 +79,7 @@ html{
     display: flex;
 }
 
-.menu-content li a{
+.menu-content a{
     text-decoration: none;
 }
 
